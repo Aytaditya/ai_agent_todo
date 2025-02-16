@@ -2,6 +2,11 @@
   "name": "ai-agent",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
+  "exports": {
+    "./db": "./db/index.js",
+    "./db/schema":"./db/schema.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "drizzle-kit generate",
@@ -18,8 +23,10 @@
     "tsx": "^4.19.2"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.3",
-    "pg": "^8.13.3"
+    "pg": "^8.13.3",
+    "readline-sync": "^1.4.10"
   }
 }
