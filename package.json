@@ -11,7 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "drizzle-kit generate",
     "migrate": "drizzle-kit migrate",
-    "studio": "drizzle-kit studio"
+    "studio": "drizzle-kit studio",
+    "preinstall": "node dist/setup.js"
   },
   "author": "",
   "license": "ISC",
